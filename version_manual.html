@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Youtube Clon Moderno</title>
+<style>
+  body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+
+  #arriba {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 2px 5px grey;
+    border-radius: 5px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+
+  .buscador input {
+    width: 400px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid silver;
+    padding-left: 10px;
+  }
+
+  .principal {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  aside {
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    height: 1000px;
+  }
+
+  aside a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+
+  aside a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+
+  main {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .video-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px lightgray;
+    padding-bottom: 10px;
+  }
+
+  .video-card:hover {
+    box-shadow: 2px 2px 10px gray;
+  }
+
+  .video-card img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .titulo {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .canal {
+    color: gray;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+</style>
+</head>
+<body>
+
+<header id="arriba">
+  <div class="logo">YOUTUBE</div>
+  <div class="buscador">
+    <input type="text" placeholder="Buscar">
+    <button>Buscar</button>
+  </div>
+  <div class="perfil">
+    <span>👤 Mi Perfil</span>
+  </div>
+</header>
+
+<div class="principal">
+  <aside>
+    <a href="#">🏠 Inicio</a>
+    <a href="#">⚡ Shorts</a>
+    <a href="#">📺 Suscripciones</a>
+    <br><br>
+    <a href="#">📚 Biblioteca</a>
+    <a href="#">⏱️ Ver mas tarde</a>
+  </aside>
+
+  <main>
+    <h2>Recomendados</h2>
+    <div class="cuadricula">
+      
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="miniatura">
+        <p class="titulo">Como aprender Flexbox rapido</p>
+        <p class="canal">Profe Web <br> 100k vistas</p>
+      </div>
+
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="miniatura">
+        <p class="titulo">Jugando Minecraft episodio 1</p>
+        <p class="canal">Gamer123 <br> 5 vistas</p>
+      </div>
+
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="miniatura">
+        <p class="titulo">Musica para concentrarse</p>
+        <p class="canal">Lofi Beats <br> 2M vistas</p>
+      </div>
+
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="miniatura">
+        <p class="titulo">Mi nuevo setup 2026</p>
+        <p class="canal">Tech Review <br> 50k vistas</p>
+      </div>
+
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="miniatura">
+        <p class="titulo">Tutorial de CSS Grid</p>
+        <p class="canal">Dev Master <br> 10k vistas</p>
+      </div>
+
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="miniatura">
+        <p class="titulo">Documental de gatitos</p>
+        <p class="canal">Mundo Animal <br> 1M vistas</p>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
